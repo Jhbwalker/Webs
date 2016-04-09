@@ -1,0 +1,273 @@
+@charset "utf-8";
+
+h1, h2 { 
+	font-style: Helvetica;	 
+}
+h1{ 
+	font-size:3em;
+}
+h3{ 	
+	padding-top: 15px; 
+	font-weight: normal; 
+	font-size: 1.25em; 
+}
+
+footer{ 
+	background: #333; 
+	color: #eee;
+	font-size: 11px;
+	padding:20px;
+ }
+footer li{ 
+	list-style: none; 
+	position: center;
+	font-size: 1.125em;
+	margin-left: -40px;  
+ }
+
+
+#TitleHead{  
+	color: white;
+	font-size: 2em;
+	margin-top: -10px;
+	margin-left:-105px;
+
+}
+
+#Master{ 
+	/*width: 960px;*/
+	width:960px; 
+	margin: 0 auto; 
+}
+
+#header {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #7EC0EE;
+	/*background-image: url(../images/header_cockaroach.png);*/
+	height: 120px;
+	width: 100%;
+	text-align:center; 
+	padding: 30px 0; 
+	margin: 0; 
+}
+#Menu {
+	background-color: #3399ff;
+	height: 70px;
+	width:100%;
+	margin-top:-20px;  
+		
+}
+.nav { 
+	margin: 0 300px 0 350px; 
+	width: 800px;
+	height: 20px;
+	float:left;
+ }
+ .caret { 
+	color: #ff9900;
+  }
+ 
+
+.drop{
+	height: 30px; 
+	width: 150px; 
+	color: #000;
+	display: block;
+
+	position: absolute;
+
+}
+.drop:visited{ 
+	color: red;
+ }
+#MBackdrop{ 
+	background-color: #333; 
+
+}
+#Slideshow {
+	background-color: skyblue;
+	height: 300px;
+	width: 850px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-right: auto;
+	margin-left: auto;
+	clear: both;
+}
+#Slideshow .item{ 
+	height: 300px; 
+
+ }
+#slide1{ 
+	background: url(../images/PestControl.gif) top center no-repeat;
+ }
+ #slide2{ 
+	background: url(../images/resort.jpg) top center no-repeat;
+  }
+  #slide3{ 
+	background: url(../images/buildings.gif) top center no-repeat;
+   }
+ .carousel{ 
+	width: 1200px; 
+  }
+.carousel-caption{ 
+	font-size: 24px;
+	text-align: center;
+	color: white;
+ }
+#transparent{ 
+	background-color: #CCC; 
+	width:850px; 
+	height: 50px;
+	margin-top: 230px; 
+	opacity: 0.65; 
+	
+	 
+}
+nav{ 
+	text-align: right; 
+	padding-right: 5px; 
+	 
+}
+nav ul{ 
+	list-style:none;  
+}
+nav li{ 
+	display: ;
+}
+nav a{ 
+	font-weight: 800; 
+	padding: 15px 10px; 
+	text-decoration: none;
+	color: white; 
+}
+nav a:hover{ 
+	color: white !important; 
+}
+nav a:visited{ 
+	color: #ff9900; 
+}
+/*-----------------------------------------------
+---------------Global Styles---------------------
+-------------------------------------------------*/
+.tabbable img.thumbnail{ 
+	margin:0 20px 10px 0;
+ }
+.thumbnails{ 
+	margin:20px 0;
+ }
+.thumbnail{ 
+	position:relative;
+ }
+.thumbnail h3{ 
+	font-size:16px;
+	margin: 0 0 10px;
+	line-height: 20px; 
+ }
+ .thumbnail .price{ 
+	font-size: 22px; 
+	position: absolute;
+	top: -10px;
+	right: -10px; 
+	padding: 10px;
+  }
+.thumbnail span.glyphicon{ 
+	margin-right: 5px;
+ }
+
+#Footer{
+	background-color: #ccc;
+	width: 100%;
+	height: 50px;
+	clear: both;
+	margin-top: 20px;
+	float: left;
+	 
+}
+.ContentBox{
+	background-color: #7EC0EE;
+	height: 400px;
+	width: 300px;
+	/*float: left;*/
+	margin-left: 10px;
+	margin-top: 100px; 
+}
+
+#ResidentsLists li{ 
+	display: inline-block;
+
+ }
+
+/*-----------------------------------------------
+---------------Info Box Margins---------------------
+-------------------------------------------------*/
+#CaptionA{ 
+	margin-top: -10px; 
+ }
+ #myList{ 
+	cursor: default;
+  }
+
+  /*-----------------------------------------------
+---------------Media Queries---------------------
+-------------------------------------------------*/
+
+/*------------------------------------------------
+---------------Smart Phones and Small Screens-----
+-------------------------------------------------*/
+@media(min-width: 480px){ 
+	#Master{ 
+		width: 480px; 
+
+
+	 }
+	 #NavbarMenu{ 
+		float: left;
+	  }
+	#Slideshow{ 
+		width: 350px;
+
+	 }
+	
+ }
+
+/*-----------------------------------------------
+---------------Tablets and Medium Screens---------
+-------------------------------------------------*/
+
+@media(min-width: 768px){ 
+	#Slideshow{ 
+		width: 90%;
+	 }
+
+ }
+/*-----------------------------------------------
+---------------Tablets and Medium Screens--------
+-------------------------------------------------*/
+@media (min-width: 1200px){ 
+
+	#Master{ 
+		width: 1150px;
+
+	 }
+	#Slideshow{ 
+		width: 1150px;
+		/*height: 500px;*/
+
+	 }
+
+	#myCarousel .item{ 
+		height:500px;
+	 }
+	 #slide1{ 
+		background: url('../images/skyrise_Large.gif');
+	  }
+ 	 #slide2{ 
+		background: url('../images/skyrise_Large.gif');
+	  }
+	  #slide3{ 
+		background: url('../images/skyrise_Large.gif');
+	 }
+	
+	}
+ 
