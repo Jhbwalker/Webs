@@ -1,10 +1,31 @@
 @charset "utf-8";
 
-h1, h2 { 
-	font-style: Helvetica;	 
-}
+/****Web Fonts****/
+
+@font-face{ 
+	font-family: 'Abolition Regular'; 
+	 src: url('../fonts/abolition-regular-webfont.eot');
+  src: url('../fonts/abolition-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/abolition-regular-webfont.woff') format('woff'),
+       url('../fonts/abolition-regular-webfont.ttf') format('truetype');
+ }
+
+body{ 
+	 -webkit-font-smoothing: antialiased;
+   text-rendering: optimizeLegibility;
+ }
+/*Fonts*/ 
+ h2{ 
+	font-family:  Helvetica, Arial, sans-serif;
+ }
 h1{ 
-	font-size:3em;
+	color:#ffa949;
+	font-size:2.625rem;
+	text-transform: uppercase;
+	font-weight: normal;
+	line-height: 3.3; 
+	text-shadow: 5px 8px 10px #222; 
+	margin:auto;
 }
 h3{ 	
 	padding-top: 15px; 
@@ -26,43 +47,124 @@ footer li{
  }
 
 
-#TitleHead{  
-	color: white;
-	font-size: 2em;
-	margin-top: -10px;
-	margin-left:-105px;
 
-}
 
 #Master{ 
 	/*width: 960px;*/
 	width:960px; 
 	margin: 0 auto; 
 }
+#TopContainer{ 
+	width:100%;
+	margin: 3% auto 0 auto; 
+ }
 
 #header {
 	font-family: Arial, Helvetica, sans-serif;
-	background-color: #7EC0EE;
+	/*background-color: #7EC0EE;*/
 	/*background-image: url(../images/header_cockaroach.png);*/
-	height: 120px;
+	background: linear-gradient(#7EC0EE, transparent 90%), 
+	            linear-gradient(0deg, #fff, transparent),
+	            #7EC0EE url('../images/Trans_Houses.gif') no-repeat center;
+	background-size:cover;
+	height: 450px;
 	width: 100%;
 	text-align:center; 
 	padding: 30px 0; 
 	margin: 0; 
 }
-#Menu {
+#header span{ 
+	color:white;
+	font-family: 'Abolition Regular';
+	letter-spacing: .20em;
+	font-weight: 500;
+	font-size: 4.3em; 
+	margin: 100px;
+	
+ }
+ #TitleHead{  
+	color: orange;
+	font-size: 4em;
+	margin: auto;
+
+}
+.title{ 
+	color:white;
+	font-size: 1.625rem; 
+	letter-spacing: 0.45em; 
+	font-weight: 200; 
+	border-bottom: 2px solid; 
+	padding-bottom: 10px; 
+
+ }
+ .glyphicon .glyphicon-home{ 
+	width: 20px;
+	height: 10px;
+  }
+
+#BottomLineBorder {
 	background-color: #3399ff;
-	height: 70px;
+	height: 30px;
 	width:100%;
-	margin-top:-20px;  
+	margin:0;  
 		
 }
-.nav { 
-	margin: 0 300px 0 350px; 
-	width: 800px;
-	height: 20px;
-	float:left;
+.arrow{ 
+	width: 60px;
+	 
+
+  }
+ #arrowSelect{ 
+ 	margin:auto;
+
+  }
+
+  .primary-content, 
+.main-header{ 
+	text-align: center; 
  }
+ .t-border{ 
+	border-top: 2px solid darkgray;
+ }
+  .primary-content {
+	padding-top: 25px;
+  padding-bottom: 95px;
+}
+.primary-content, 
+.secondary-content { 
+	width:75%; 
+	margin: 5px auto auto auto;
+	padding-left: 50px;
+	padding-right: 50px;
+	max-width: 900px; 
+}
+
+/* --------------------------------------
+   Navbar
+   -------------------------------------- */
+   .nav .navbar-fixed-top{ 
+		color: orange;
+    }
+   #searchInput{ 
+      width: 200px; 
+
+    }
+    .navbar-brand{ 
+      padding: 13px 15px;
+     }
+    #myDropDown{ 
+     
+      padding-left: 10px;
+      float:left;
+     }
+   #glyphPics{ 
+      margin-right: 10px; 
+      float:left;
+    }
+    #glyphPics:hover{
+      color:skyblue;
+    }
+   
  .caret { 
 	color: #ff9900;
   }
@@ -80,6 +182,11 @@ footer li{
 .drop:visited{ 
 	color: red;
  }
+
+
+ /* --------------------------------------
+   Carousel
+   -------------------------------------- */
 #MBackdrop{ 
 	background-color: #333; 
 
@@ -88,7 +195,7 @@ footer li{
 	background-color: skyblue;
 	height: 300px;
 	width: 850px;
-	margin-top: 20px;
+	margin-top: 65px;
 	margin-bottom: 20px;
 	margin-right: auto;
 	margin-left: auto;
@@ -198,6 +305,21 @@ nav a:visited{
 
  }
 
+ /* --------------------------------------
+   Layout
+   -------------------------------------- */
+#features{ 
+  text-align: center;
+
+ }
+#features img{ 
+  margin:0 0 20px;
+ }
+ #MoreInfo{ 
+	text-align: center;
+	margin:10px auto;
+  }
+
 /*-----------------------------------------------
 ---------------Info Box Margins---------------------
 -------------------------------------------------*/
@@ -207,6 +329,9 @@ nav a:visited{
  #myList{ 
 	cursor: default;
   }
+  #pTags{ 
+	font-size: 1.325em;
+   }
 
   /*-----------------------------------------------
 ---------------Media Queries---------------------
@@ -218,8 +343,6 @@ nav a:visited{
 @media(min-width: 480px){ 
 	#Master{ 
 		width: 480px; 
-
-
 	 }
 	 #NavbarMenu{ 
 		float: left;
@@ -229,6 +352,7 @@ nav a:visited{
 
 	 }
 	
+	
  }
 
 /*-----------------------------------------------
@@ -236,6 +360,10 @@ nav a:visited{
 -------------------------------------------------*/
 
 @media(min-width: 768px){ 
+	#Master{ 
+		width: 768px;
+	 }
+	
 	#Slideshow{ 
 		width: 90%;
 	 }
@@ -250,6 +378,12 @@ nav a:visited{
 		width: 1150px;
 
 	 }
+	 #Menu{ 
+		margin-right: 800px; 
+	  }
+	  .nav ul{ 
+		margin-right: 200px; 
+	   }
 	#Slideshow{ 
 		width: 1150px;
 		/*height: 500px;*/

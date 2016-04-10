@@ -28,49 +28,81 @@
           <!-- <h2>Button Pest Control</h2> -->
 
         </div>
-        <div id ="Menu">
-            <nav>
-                <ul>
-                <h3>
-                    <ul class="nav navbar-nav"  >
-                        <li><a href="index.html">Home</a></li>
-                        <li class= "dropdown">
-                            <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">Services <strong class="caret red"></strong></a>
-                                <ul class ="dropdown-menu">
-                                    <li>
-                                        <a href="residential.html">Residential</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Commercial</a>
-                                    </li>
-                                    
-                                   <!--  <li class ="divider">
-                                        <li class="dropdown-header"> More Services</li>
-                                        <li><a href="#">Birds</a></li>
-                                        <li><a href="#">Rats</a></li> -->
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources<strong class="caret"></strong></a>
-                                    <ul class= "dropdown-menu">
-                                        <li><a href="#">Genreal Pests</a></li>
-                                        <li><a href="#">Pigeons</a></li>
-                                        <li><a href="#">Bed Bugs</a></li>
-                                    </ul>
-
-
-
-                                </li>
-                            </li>
-                            <li><a href="about.html">About</a></li>
-                            <li class="active"><a href="contact.html">Contact</a></li>
+        <div class ="navbar navbar-fixed-top">
+            
+            <div class ="container">
+                <button class ="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
+                    <span class = "icon-bar"></span>
+                    <span class = "icon-bar"></span>
+                    <span class = "icon-bar"></span>    
+                </button>
+                <a class ="navbar-brand" href="#"><img src="images/logo.png" alt="Logo"></a>
+                
+                <div class="nav-collapse collapse navbar-responsive-collapse">
+                    
+                    <ul class = "nav navbar-nav">
+                        <li>
+                            <a href="index.html">Home</a>
                         </li>
+                        
+                        <li class="dropdown">
+                            
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resouces<strong class="caret"></strong></a>
+                            
+                            <ul class = "dropdown-menu">
+                                <li>
+                                    <a href="#">General Pests</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="#">Pigeons</a>
+                                </li>
+                                
+                                <li><a href="#">Bed Bugs</a></li>
+                                
+                                <li class = "divider">
+                                    <li class ="dropdown-header">More Serives</li>
+                                    <li><a href="#">Logo Design</a></li>
+                                    <li><a href="#"> Game Dev</a></li>
+                                </li>
+
+                                
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sevices<strong class="caret"></strong></a>
+                            
+                            <ul class = "dropdown-menu">
+                                <li>
+                                    <a href="Residential.html">Residential</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="#">Commerecial</a>
+                                </li>
+                                
+                                <li><a href="#">Something Else</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="about.html">About</a></li>
+                        <li  class = "active"><a href="contact.html">Contact</a></li>
+                        
                     </ul>
-                <h3>  
-                </ul>
-            </nav>
-      </div>
+                        <!--Form floats to the left to give an inline-block design-->
+                        <form class="navbar-form pull-left">
+                            <input type="text" class = "form-control" placeholder="search this site" id="searchInput"></input>
+                            <button type="submt" class="btn btn-default">
+                                <span class="glyphicon glyphicon-search"></span>
+                            </button>
+
+                        </form><!--end of navnar form-->
+                        
+                </div><!--end of collapse-->
+            </div>
+
+        </div><!--end of nav bar-->
       <div class="conatainer" id="main">
          
           <div class ="well well-small visible-sm">
@@ -82,48 +114,59 @@
       <div class="row" id="contact">
         <div class="col-12">
 
-            <div class="col-6">
+            <div class="col-4">
                 <div class="thumbnail">
-                    <img src="images/item_webhosting101.jpg" alt="Web Hosting 101">
+                    <img class="img-responsive"src="images/item_webhosting101.jpg" alt="Web Hosting 101">
                     <div class ="caption">
-                        <h3>My Name</h3>
+                        <!-- <h3>My Name</h3> -->
                         <p>Hi, My name is Jonathan Smith. I am here to bring you friendly services and to stomp out your pest issues! </p>
                         
                     </div><!--End of caption-->
                     
                 </div><!--End of Thumbnail-->
                 
-            </div>
+            </div><!--End of col-4-->
+            <div class="col-4">
+                <h4>Contact Information</h4>
+                
+                <div class="list-group">
+                    <a href="#" class="list-group-item" >
+                        <h4 class ="list-group-item-heading">Button Pest Control</h4>         
+                    </a><!--End of Item-->
+                    <a href="#" class="list-group-item" id="myList">
+                        <h4 class ="list-group-item-heading">Bigg, CA</h4>
+                    </a><!--End of Item-->
+                    <a href="#" class="list-group-item">
+                        <h4 class ="list-group-item-heading">Phone</h4>
+                        <p class ="list-group-item-text">(530) XXX-XXXX</p>
+                    </a><!--End of Item-->
+                    <a href="#" class="list-group-item">
+                        <h4 class ="list-group-item-heading">Email</h4>
+                        <p class ="list-group-item-text">ButtonPestControl@yahoo.com</p>
+                    </a><!--End of Item-->
+                    <a href="#" class="list-group-item">
+                        <h4 class ="list-group-item-heading">Business Hours</h4>
+                        <p class ="list-group-item-text">Monday- Friday, 8am - 5pm</p>
+                        <p>Saturday by appointment</p>
+                    </a><!--End of Item-->
 
-            <div class="col-6">
-            <h4>Contact Information</h4>
-            <hr>
-            <div class="list-group">
-                <a href="#" class="list-group-item" >
-                    <h4 class ="list-group-item-heading">Button Pest Control</h4>         
-                </a><!--End of Item-->
-                <a href="#" class="list-group-item" id="myList">
-                    <h4 class ="list-group-item-heading">Bigg, CA</h4>
-                </a><!--End of Item-->
-                <a href="#" class="list-group-item">
-                    <h4 class ="list-group-item-heading">Phone</h4>
-                    <p class ="list-group-item-text">(530) XXX-XXXX</p>
-                </a><!--End of Item-->
-                <a href="#" class="list-group-item">
-                    <h4 class ="list-group-item-heading">Email</h4>
-                    <p class ="list-group-item-text">ButtonPestControl@yahoo.com</p>
-                </a><!--End of Item-->
-                <a href="#" class="list-group-item">
-                    <h4 class ="list-group-item-heading">Business Hours</h4>
-                    <p class ="list-group-item-text">Monday- Friday, 8am - 5pm</p>
-                    <p>Saturday by appointment</p>
-                </a><!--End of Item-->
-
-            </div><!--End of List groups--> 
+                </div><!--End of List groups--> 
+                
+            </div><!--End of col-4 -->
+            <div class="col-4">
+            <h2>Area of Service</h2>
+                <div class="well">
+                <h3>Button Pest Control provides service to:</h3>
+                <p class="bg-primary">Butte County</p>
+                <h4>Glenn County</h4>
+                <h4>Colusa County</h4>
+                <h4>Tehama County</h4>
+                    
+                </div>
                 
             </div>
             
-        </div>
+        </div><!--End of col-12--> 
           
       </div><!--end of contact-->
     		

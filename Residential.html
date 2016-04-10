@@ -23,55 +23,152 @@
     </head>
 
     <body>
+    <div id ="BottomLineBorder"></div>
     <div id="header">
-          <h1 id="TitleHead">Pest invading your property? Don't Panic...</h1>
-          <!-- <h2>Button Pest Control</h2> -->
-
-        </div>
-        <div id ="Menu">
-            <nav>
-                <ul>
-                <h3>
-                    <ul class="nav navbar-nav"  >
-                        <li class="active"><a href="#">Home</a></li>
-                        <li class= "dropdown">
-                            <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">Services <strong class="caret red"></strong></a>
-                                <ul class ="dropdown-menu">
-                                    <li>
-                                        <a href="Residential.html">Residential</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Commercial</a>
-                                    </li>
-                                    
-                                   <!--  <li class ="divider">
-                                        <li class="dropdown-header"> More Services</li>
-                                        <li><a href="#">Birds</a></li>
-                                        <li><a href="#">Rats</a></li> -->
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources<strong class="caret"></strong></a>
-                                    <ul class= "dropdown-menu">
-                                        <li><a href="#">Genreal Pests</a></li>
-                                        <li><a href="#">Pigeons</a></li>
-                                        <li><a href="#">Bed Bugs</a></li>
-                                    </ul>
-
-
-
-                                </li>
-                            </li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="contact.html">Contact</a></li>
+        <header>
+            <span class ="title">Pest invading your property? Don't panic!</span>
+            <h1 id="TitleHead">Button Pest Control</h1>
+            <span><a href=""> We take the panic out of pests...</a></span>
+            
+        </header>
+    </div>
+    <div class ="navbar navbar-fixed-top">
+            
+            <div class ="container">
+                <button class ="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
+                    <span class = "icon-bar"></span>
+                    <span class = "icon-bar"></span>
+                    <span class = "icon-bar"></span>    
+                </button>
+                <a class ="navbar-brand" href="#"><img src="images/logo.png" alt="Logo"></a>
+                
+                <div class="nav-collapse collapse navbar-responsive-collapse">
+                    
+                    <ul class = "nav navbar-nav">
+                        <li>
+                            <a href="index.html">Home</a>
                         </li>
+                        
+                        <li class="dropdown">
+                            
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resouces<strong class="caret"></strong></a>
+                            
+                            <ul class = "dropdown-menu">
+                                <li>
+                                    <a href="#">General Pests</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="#">Pigeons</a>
+                                </li>
+                                
+                                <li><a href="#">Bed Bugs</a></li>
+                                
+                                <li class = "divider">
+                                    <li class ="dropdown-header">More Serives</li>
+                                    <li><a href="#">Logo Design</a></li>
+                                    <li><a href="#"> Game Dev</a></li>
+                                </li>
+
+                                
+                            </ul>
+                        </li>
+                        <li class=" active dropdown">
+                            
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sevices<strong class="caret"></strong></a>
+                            
+                            <ul class = "dropdown-menu">
+                                <li>
+                                    <a href="Residential.html">Residential</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="#">Commerecial</a>
+                                </li>
+                                
+                                <li><a href="#">Something Else</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        
                     </ul>
-                <h3>  
-                </ul>
-            </nav>
-      </div>
-    		
+                        <!--Form floats to the left to give an inline-block design-->
+                        <form class="navbar-form pull-left">
+                            <input type="text" class = "form-control" placeholder="search this site" id="searchInput"></input>
+                            <button type="submt" class="btn btn-default">
+                                <span class="glyphicon glyphicon-search"></span>
+                            </button>
+
+                        </form><!--end of navnar form-->
+                        
+                </div><!--end of collapse-->
+            </div>
+
+        </div><!--end of nav bar-->
+        <div class="row">
+            <div class="col-12">
+                <div class="col-6">
+                    <div class ="thumbnail">
+                        <img class="img-responsive img-rounded thumbnail" src="images/item_webhosting101.jpg">
+                    </div>
+                    
+                </div>
+                <div class="col-6">
+                    <div class ="thumbnail">
+                        <img class="img-responsive img-rounded" src="images/item_webhosting101.jpg">
+                        <h3 class="pull-right">fdaskfjdsajfkajfj</h3>
+                    </div> 
+                    
+                </div>              
+            </div>
+    	</div>
+        <div class="row">
+            <div class="col-12">
+                <div class="row" id="bigCallout">
+            <div class ="col-12">
+                
+            <div class = " alert alert-success alert-block fade in" id = "successAlert">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+
+                <h4>Success!</h4>
+                <p>You just made this element display by using jQuery. Click the "x" in the top right corner to close</p>
+                
+            </div><!--end of alert -->
+
+                <!--visible only on small devivess-->
+                <div class ="well well-small visible-sm">
+                    <a href="" class="btn btn-large btn-block btn-default"><span class = "glyphicon glyphicon-phone"></span> Give us a call !</a>
+                </div><!--end well sm-->
+                <div class="well">
+                    <div class = "page-header">
+                        <h2>Building a good residential service<small>:</small></h2>
+
+                        <p class="lead">
+                            At Button Pest Control we deliver year round protection from the most common household pests.  At every service we will inspect the exterior of your home.  We will be looking in key areas for pest activity.  If we find activity we will treat it and notify you.  We know that each season will bring about different pests and we will be prepared to eliminate them for you.  We can also inspect and treat the interior of your home, as needed, providing you with a multi-level defense against pests.
+                        </p>
+                        <ul>
+                            <li><h4>We customize your service to your needs</h4></li>
+                            <li><h4>One Time, Monthly, and Bi-Monthly service available</h4></li>
+                            <li><h4>Call backs are free</h4></li>
+                            <li><h4>We guarantee our One Time service for 30 days</h4></li>
+                            <li><h4>Exterior inspections to identify current pest issues around home</h4></li>
+                            <li><h4>We remove webs from all residential houses</h4></li>
+                            <li><h4>Residual liquid-barrier treatment around your house</h4></li>
+                            <li><h4>When it rains we add a second barrier around your house in the form of granules</h4></li>
+                            <li><h4>We offer Organic pest control options</h4></li>
+                        </ul>
+                        <a href="" class ="btn btn-large btn-primary" id="AlertMe">Click Here Mother Fucker!!</a>
+                        
+                    </div><!--end of page header-->
+                </div><!--end of well-->
+            </div><!--end col 12-->
+
+        </div><!--end of bigCallout-->
+            </div>
+            
+        </div>
     
     <footer>
         <div class="container">
