@@ -261,7 +261,7 @@ nav a:visited{
 	margin:0 20px 10px 0;
  }
 .thumbnails{ 
-	margin:20px 0;
+	margin:20px 10px;
  }
 .thumbnail{ 
 	position:relative;
@@ -280,6 +280,18 @@ nav a:visited{
   }
 .thumbnail span.glyphicon{ 
 	margin-right: 5px;
+ }
+ img{ 
+	box-shadow: inset 0 0 50px 10px rgba(0,0,0,1),
+  }
+  .box-shad {
+    -webkit-box-shadow: inset 0 0 50px 10px rgba(0,0,0,1);
+    -moz-box-shadow: inset 0 0 50px 10px rgba(0,0,0,1);
+    box-shadow: inset 0 0 50px 10px rgba(0,0,0,1);
+}
+#shadows{ 
+	box-shadow: inset 0 0 50px 10px rgba(0,0,0,1),
+				 0 15px 20px -12px rgba(0,0,0,.8);
  }
 
 #Footer{

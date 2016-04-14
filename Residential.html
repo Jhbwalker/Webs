@@ -55,7 +55,7 @@
                             
                             <ul class = "dropdown-menu">
                                 <li>
-                                    <a href="#">General Pests</a>
+                                    <a href="General.html">General Pests</a>
                                 </li>
                                 
                                 <li>
@@ -66,8 +66,8 @@
                                 
                                 <li class = "divider">
                                     <li class ="dropdown-header">More Serives</li>
-                                    <li><a href="#">Logo Design</a></li>
-                                    <li><a href="#"> Game Dev</a></li>
+                                    <li><a href="#"></a></li>
+                                    <li><a href="#"></a></li>
                                 </li>
 
                                 
@@ -79,14 +79,12 @@
                             
                             <ul class = "dropdown-menu">
                                 <li>
-                                    <a href="Residential.html">Residential</a>
+                                    <a href="#">Residential</a>
                                 </li>
                                 
                                 <li>
                                     <a href="#">Commerecial</a>
                                 </li>
-                                
-                                <li><a href="#">Something Else</a></li>
                             </ul>
                         </li>
 
@@ -112,13 +110,14 @@
                 <div class="col-6">
                     <div class ="thumbnail">
                         <img class="img-responsive img-rounded thumbnail" src="images/item_webhosting101.jpg">
+                         <h3 class="pull-right">Floating Description text here</h3>
                     </div>
                     
                 </div>
                 <div class="col-6">
                     <div class ="thumbnail">
                         <img class="img-responsive img-rounded" src="images/item_webhosting101.jpg">
-                        <h3 class="pull-right">fdaskfjdsajfkajfj</h3>
+                        <h3 class="pull-right">Floating Description text here</h3>
                     </div> 
                     
                 </div>              
@@ -128,14 +127,6 @@
             <div class="col-12">
                 <div class="row" id="bigCallout">
             <div class ="col-12">
-                
-            <div class = " alert alert-success alert-block fade in" id = "successAlert">
-                <button type="button" class="close" data-dismiss="alert">&times;</button>
-
-                <h4>Success!</h4>
-                <p>You just made this element display by using jQuery. Click the "x" in the top right corner to close</p>
-                
-            </div><!--end of alert -->
 
                 <!--visible only on small devivess-->
                 <div class ="well well-small visible-sm">
@@ -159,7 +150,62 @@
                             <li><h4>When it rains we add a second barrier around your house in the form of granules</h4></li>
                             <li><h4>We offer Organic pest control options</h4></li>
                         </ul>
-                        <a href="" class ="btn btn-large btn-primary" id="AlertMe">Click Here Mother Fucker!!</a>
+
+                        <a href="#myModal" class="btn btn-info" data-toggle="modal"><span class="glyphicon glyphicon-mail"></span>Email Us</a> 
+                                <div class="modal fade" id="myModal">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button class="close" data-dismiss="modal">&times;</button>
+
+                                                <h4 class ="modal-title">Have a question?</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h4>Send us an email and we will respond within 24 hours!</h4>
+
+                                                <p>Please leave your full name, email address, and any questions you might have down below.</p>
+                                                <h4> Contacting us via phone</h4>
+                                                <a href="#" class="btn btn-warning pop" data-toggle="popovver" data-placement="top" data-original-title="Office Hours:" data-content="Weekdays 8am-5pm">(530)XXX-XXXX</a>
+
+                                                
+                                                <hr>
+
+                                                <p><small class ="text-muted">PS.This form does't do anything just yet, still need to add in backend programming. Just a heads up!</small></p>
+
+                                                <form class="form-horizontal">
+                                                    <div class="form-group">
+                                                        <label class="col-lg-2 control-label" for="inputName">Name</label>
+                                                        <div class="col-lg-10">
+                                                            <input class="form-control" id="inputName" placeholder="Name" type="text">
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="form-group">
+                                                        <label class="col-lg-2 control-label" for="inputEmail">Email</label>
+                                                        <div class="col-lg-10">
+                                                            <input class="form-control" id="inputEmail" placeholder="Email" type="email">
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="form-group">
+                                                        <label class="col-lg-2 control-label" for="inputMessage">Message</label>
+                                                        <div class="col-lg-10">
+                                                            <textarea class="form-control" id="inputMessage" placeholder="Message" rows="3"></textarea>
+                                                           
+                                                    </div>
+                                                </form>
+
+                                            </div>
+                                            <div class="modal-footer">
+                                                    <button class=" btn btn-default" data-dismiss="modal" tpye="button">Close</button> 
+                                                    <button class ="btn btn-primary" type="button">Send</button>
+                                                </div>
+                                            
+                                        </div>
+                                        
+                                    </div>
+                                </div><!--End of myModal-->
+                        
                         
                     </div><!--end of page header-->
                 </div><!--end of well-->
@@ -169,6 +215,7 @@
             </div>
             
         </div>
+
     
     <footer>
         <div class="container">
